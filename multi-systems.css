@@ -378,7 +378,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-bottom: 0;
     flex-wrap: nowrap;
     width: 100%;
@@ -386,20 +386,27 @@ footer {
 
 .social-link {
     color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-    width: 35px;
-    height: 35px;
+    font-size: 2rem;
+    transition: all 0.3s;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     margin: 0;
     padding: 0;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social-link:first-child {
+    margin-top: 1rem;
 }
 
 .social-link i {
-    font-size: 1.5rem;
+    color: white;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,19 +415,26 @@ footer {
 }
 
 .social-link:hover {
-    background: #ccc6d6;
+    background: #9fa5ac;
+    color: white;
+    border-radius: 0;
+}
+
+.social-link:hover i {
+    color: white;
 }
 
 .learn-more {
     display: inline-block;
-    padding: 0.3rem 1rem;
+    padding: 0.5rem 1rem;
     background: #9fa5ac;
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
     transition: background 0.3s;
     margin-left: 1rem;
-    border-radius: 0;
+    border-radius: 10px;
+    height: 40px;
 }
 
 .learn-more:hover {
@@ -486,7 +500,7 @@ footer {
 }
 
 .footer-bottom {
-    width: 98.9vw;
+    width: 100%;
     height: 7vh;
     text-align: center;
     padding-top: 0.8rem;
@@ -528,6 +542,15 @@ footer {
     }
 }
 
+
+
+
+
+
+
+
+
+
 /* Multi Split System Sections */
 .multi-split-system {
     padding: 0;
@@ -546,7 +569,7 @@ footer {
     max-width: 100%;
     margin: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 4rem;
     padding: 2rem;
 }
@@ -561,13 +584,14 @@ footer {
     height: auto;
     max-width: 700px;
     object-fit: contain;
-    margin-bottom: 18vh;
+    margin-bottom: 0;
 }
 
 .section-text {
     flex: 1;
     text-align: left;
-    margin-bottom: 30vh;
+    margin-bottom: 0;
+    margin-top: 0rem;
 }
 
 .section-text h2 {
@@ -609,6 +633,8 @@ footer {
 .section-text3 {
     flex: 1;
     text-align: left;
+    margin-bottom: 0;
+    margin-top: -4rem;
 }
 
 .section-text3 h2 {
@@ -648,12 +674,14 @@ footer {
     height: auto;
     max-width: 800px;
     object-fit: contain;
+    margin-bottom: 0;
 }
 /* ------------- */
 .section-text2 {
     flex: 1;
     text-align: left;
-    margin-bottom: 53vh;
+    margin-bottom: 0;
+    margin-top: -0rem;
 }
 
 .section-text2 h2 {
@@ -691,13 +719,14 @@ footer {
     height: auto;
     max-width: 800px;
     object-fit: contain;
-    margin-bottom: 18vh;
+    margin-bottom: 0;
 }
 /* --------------------------- */
 .section-text3 {
     flex: 1;
     text-align: left;
-    margin-bottom: 53vh;
+    margin-bottom: 0;
+    margin-top: 0rem;
 }
 
 .section-text3 h2 {
@@ -735,51 +764,7 @@ footer {
     height: auto;
     max-width: 800px;
     object-fit: contain;
-    margin-bottom: 18vh;
-}
-/* ------------- */
-.section-text3 {
-    flex: 1;
-    text-align: left;
-    margin-bottom: 53vh;
-}
-
-.section-text3 h2 {
-    width: 100%;
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-    background: rgb(45, 182, 45);
-    padding: 1rem 2rem;
-    display: inline-block;
-    text-align: center;
-}
-
-
-.section-text3 h3 {
-    font-size: 1.8rem;
-    color: black;
-    margin-bottom: 1rem;
-    font-weight: 400;
-}
-
-.section-text3 p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.8;
-}
-.section-image3 {
-    flex: 1;
-    max-width: 100%;
-}
-
-.section-image3 img {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    object-fit: contain;
-    margin-bottom: 18vh;
+    margin-bottom: 0;
 }
 /* Indoor Units Section */
 .indoor-units-section {
@@ -931,38 +916,22 @@ footer {
 .technical-data {
     padding: 6rem 5%;
     background: white;
-}
-
-.technical-data h2 {
-    font-size: 2.5rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 3rem;
-    font-weight: 500;
+    width: 100%;
 }
 
 .data-tables {
-    max-width: 1400px;
-    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
 }
 
 .table-section {
     margin-bottom: 4rem;
+    width: 50%;
+    overflow-x: auto;
 }
 
-.table-section:last-child {
-    margin-bottom: 0;
-}
-
-.table-section h3 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-weight: 500;
-}
-
-table {
+.table-section table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 2rem;
@@ -970,28 +939,101 @@ table {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-th, td {
+.table-section th {
+    position: sticky;
+    top: 0;
+    background: #eceff1;
+    z-index: 1;
+}
+
+.table-section th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+}
+
+.table-section td:first-child {
+    position: sticky;
+    left: 0;
+    background: white;
+    z-index: 1;
+}
+
+.table-section tr:nth-child(even) td:first-child {
+    background: #eceff1;
+}
+
+.table-section tr:hover td:first-child {
+    background: #f0f0f0;
+}
+
+.table-section th, 
+.table-section td {
     padding: 1.2rem;
     text-align: left;
     border: 1px solid #ddd;
 }
 
-th {
-    background: #f8f9fa;
+.table-section th {
+    background: #eceff1;
     font-weight: 500;
+    color: #272323;
+}
+
+.table-section td {
+    color: #3d3939;
+}
+
+.table-section tr:nth-child(even) {
+    background: #eceff1;
+}
+
+.table-section tr:hover {
+    background: #f0f0f0;
+}
+
+.table-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    background-color: #0056b3;
+}
+
+.table-section h3 {
+    text-align: left;
+    font-size: 2rem;
     color: #333;
 }
 
-td {
-    color: #666;
+@media (max-width: 1200px) {
+    .data-tables {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .table-section {
+        width: 100%;
+    }
 }
 
-tr:nth-child(even) {
-    background: #f8f9fa;
-}
-
-tr:hover {
-    background: #f0f0f0;
+@media (max-width: 768px) {
+    .technical-data {
+        padding: 2rem 1rem;
+    }
+    
+    .technical-data h2 {
+        font-size: 2rem;
+    }
+    
+    .table-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .table-section table {
+        font-size: 0.8rem;
+    }
 }
 
 /* Responsive Design */
