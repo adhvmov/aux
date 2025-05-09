@@ -370,6 +370,33 @@ main {
     height: 100%;
     overflow: hidden;
 }
+.hero:nth-child(1) {
+    background: url('https://auxcool.com/wp-content/uploads/2025/02/159763313-scaled-1.webp') center/cover no-repeat;
+}
+
+.hero:nth-child(2) {
+    background: url('https://auxcool.com/wp-content/uploads/2025/02/603749992.webp') center/cover no-repeat;
+}
+
+.hero:nth-child(3) {
+    background: url('https://auxcool.com/wp-content/uploads/2025/02/957937029-scaled-1.webp') center/cover no-repeat;
+}
+
+.hero:nth-child(4) {
+    background: url('https://auxcool.com/wp-content/uploads/2025/02/963938777-scaled-1.webp') center/cover no-repeat;
+}
+
+.hero:nth-child(5) {
+    background: url('https://auxcool.com/wp-content/uploads/2025/02/AdobeStock_496647702-scaled-1.jpeg') center/cover no-repeat;
+}
+
+.hero:nth-child(6) {
+    background: url('https://auxcool.com/wp-content/uploads/2025/02/section_1_1_0.webp') center/cover no-repeat;
+}
+
+.hero:nth-child(7) {
+    background: url('https://auxcool.com/wp-content/uploads/2025/02/section_1_3.webp') center/cover no-repeat;
+}
 
 .hero {
     position: absolute;
